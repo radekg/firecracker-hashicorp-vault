@@ -132,7 +132,7 @@ rc-update add procfs boot
 rc-update add sysfs boot
 rc-update add local default
 
-echo "#!/bin/sh" >> /etc/local.d/HelloWorld.start
+echo "#!/bin/sh" >> /etc/local.d/HashiCorpVault.start
 echo "/usr/local/bin/docker-entrypoint.sh server -dev && reboot || reboot" >> /etc/local.d/HashiCorpVault.start
 chmod +x /etc/local.d/HashiCorpVault.start
 echo rc_verbose=yes > /etc/conf.d/local
