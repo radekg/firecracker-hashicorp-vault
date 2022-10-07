@@ -20,8 +20,8 @@ else
         rm "firecracker-${latest}-${arch}.tgz"
 
         echo "linking firecracker ${latest}-${arch}"
-        sudo ln -sfn "${install_dir}/release-${latest}/firecracker-${latest}-${arch}" "${bin_dir}/firecracker-${latest}-${arch}"
-        sudo ln -sfn "${install_dir}/release-${latest}/jailer-${latest}-${arch}" "${bin_dir}/jailer-${latest}-${arch}"
+        sudo ln -sfn "${install_dir}/release-${latest}-${arch}/firecracker-${latest}-${arch}" "${bin_dir}/firecracker-${latest}-${arch}"
+        sudo ln -sfn "${install_dir}/release-${latest}-${arch}/jailer-${latest}-${arch}" "${bin_dir}/jailer-${latest}-${arch}"
         sudo ln -sfn "${bin_dir}/firecracker-${latest}-${arch}" "${bin_dir}/firecracker"
         sudo ln -sfn "${bin_dir}/jailer-${latest}-${arch}" "${bin_dir}/jailer"
 
